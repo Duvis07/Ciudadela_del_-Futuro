@@ -1,74 +1,29 @@
 package sura.com.constructores.s.a.s
 
-import sura.com.constructores.s.a.s.clases.construcciones._
-import sura.com.constructores.s.a.s.clases.coordenadas.Coordenada
-import sura.com.constructores.s.a.s.clases.ordenes.OrdenConstruccion
-import sura.com.constructores.s.a.s.clases.solicitud.Solicitud
 
-import java.time.LocalDateTime
+import sura.com.constructores.s.a.s.models.{Ciudadela, OrdenConstruccion}
+import sura.com.constructores.s.a.s.view.{Imprimir, MenuPrincipal}
+
+import java.util.Calendar
 
 
 object Main {
   def main(args: Array[String]): Unit = {
 
-    //Se crea la lista de solicitudes de construcción con sus respectivos datos y coordenadas
-    println()
-    println("..:: Lista de solicitudes de construcción ::..")
-
-    val lista: List[Solicitud] = List(
-      Solicitud(Casa(111, 22, 70, 90, 90), Coordenada(1, 4)),
-      Solicitud(Lago(111, 111, 41, 55, 90), Coordenada(2, 4)),
-      Solicitud(Edificio(200, 100, 1080, 100, 200), Coordenada(3, 4)),
-      Solicitud(CanchaDeFutbol(100, 100, 100, 100, 100), Coordenada(3, 4)),
-      Solicitud(Gimnasio(111, 232, 400, 505, 600), Coordenada(1, 4)),
-
-    )
-
-
-    //Se filtran las solicitudes que no tienen orden de construcción y se retorna la lista de solicitudes con orden de construcción
-    try {
-      val listaNueva = test2(lista)
-      println()
-//      println("..:: Lista de solicitudes con orden de construcción ::..")
-//      listaNueva.foreach(a => println(a))
-    } catch {
-      case e: Exception => println(s"ERROR: ${e.getMessage}")
-    }
+    val fechaInicioProyecto = Calendar.getInstance()
+    val ordenConstruccion: OrdenConstruccion = OrdenConstruccion(None, None)
+    val ciudadela: Ciudadela = Ciudadela(None, fechaInicio = fechaInicioProyecto)
+    Imprimir.imprimirBienvenida(ciudadela)
+    MenuPrincipal.menuPrincipal(ordenConstruccion, ciudadela)
 
   }
-
-
-  //Se crea el método test2 para probar la creación de solicitudes de construcción y se retorna la lista de solicitudes con orden de construcción creada
-  def test2(lista: List[Solicitud]) = {
-    lista.filter(item => item.empezarConstruccion().isDefined)
-      .map(solicitud => {
-        solicitud.empezarConstruccion().get
-      })
-  }
-
-//  //Se crea el método test1 para probar la creación de solicitudes de construcción
-//  def test1(): Unit = {
-//    val lista = List(
-//      Casa(111, 22, 4, 55, 90),
-//      Casa(11, 332, 40, 5, 90),
-//      Casa(100, 100, 100, 100, 100),
-//      Lago(100, 100, 100, 100, 100),
-//      Edificio(100, 100, 100, 100, 100)
-//    )
-//
-//    //  se crea la solicitud de construcción con los datos de la lista y se crea la orden de construcción con la solicitud y la fecha de inicio de la construcción
-//    //Se imprime la orden de construcción
-//    for (item <- lista) {
-//      val solicitud: Solicitud = Solicitud(item, Coordenada(1, 2))
-//      val orden: Option[OrdenConstruccion] = solicitud.empezarConstruccion()
-//      val orden2: Option[OrdenConstruccion] = solicitud.empezarConstruccion(LocalDateTime.of(2022, 7, 15, 7, 0))
-//
-//      println(orden)
-//      println(orden2)
-//
-//    }
-//
-//  }
-//
 }
 
+//El código proporcionado crea una instancia de Calendar llamada fechaInicioProyecto que representa la fecha y hora actuales. Luego, crea dos instancias vacías de OrdenConstruccion y Ciudadela.
+//Después, llama a la función Imprimir.imprimirBienvenida(ciudadela) que imprime un mensaje de bienvenida y muestra información sobre la Ciudadela recién creada.
+//
+//Finalmente, llama a la función MenuPrincipal.menuPrincipal(ordenConstruccion, ciudadela) para mostrar el menú principal de la aplicación y permitir que el usuario interactúe con ella. La función recibe como
+// parámetros la OrdenConstruccion y Ciudadela creadas anteriormente, y se encarga de manejar la lógica de la aplicación y las interacciones del usuario.
+//
+//En resumen, este código establece las variables necesarias para crear una nueva Ciudadela y OrdenConstruccion, muestra un mensaje de bienvenida y luego muestra el menú principal de la aplicación para que
+// el usuario pueda interactuar con ella.
