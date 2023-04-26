@@ -12,14 +12,7 @@ object AdministradorCiudadela {
     ciudadela.solicitudesOrdenes.map(orden => orden.tipoConstruccion.get.tiempo).sum
   }
 
-  //Esta función recibe una ciudadela y una orden de construcción como parámetros, y calcula el plazo total de la orden de
-  // construcción sumando los tiempos de construcción de todas las órdenes que ya se hayan agregado a la ciudadela, más el
-  // tiempo de construcción de la orden de construcción que se esté agregando.
-  def calcularPlazoOrden(ciudadela: Ciudadela, ordenConstruccion: OrdenConstruccion): Int = {
-    ciudadela.solicitudesOrdenes.map(orden => orden.tipoConstruccion.get.tiempo).sum + ordenConstruccion.tipoConstruccion.get.tiempo
-  }
-
-  //  sta función recibe una ciudadela como parámetro y calcula la fecha en que la ciudadela estará culminada,
+  //  esta función recibe una ciudadela como parámetro y calcula la fecha en que la ciudadela estará culminada,
   //  dependiendo del estado de la ciudadela. Si la ciudadela ya está culminada, simplemente se asigna el plazo de
   //  entrega calculado anteriormente. Si no está culminada, se calcula la fecha sumando el plazo total de la ciudadela
   //  a la fecha de inicio de la ciudadela, y se asigna el plazo de entrega calculado anteriormente.

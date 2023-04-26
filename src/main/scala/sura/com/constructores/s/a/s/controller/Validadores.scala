@@ -12,9 +12,6 @@ trait Validadores {
     ciudadela.material.madera < ordenConstruccion.tipoConstruccion.get.madera ||
     ciudadela.material.arena < ordenConstruccion.tipoConstruccion.get.arena
 
-  // comprueba si no hay más órdenes de construcción pendientes. Si no hay ninguna orden pendiente, se devuelve true.
-  def verificarEstadoProyecto(ciudadela: Ciudadela): Boolean = ciudadela.solicitudesOrdenes.isEmpty
-
 
   //La función validarCoordenadas devuelve una lista de valores booleanos que indican si la nueva OrdenConstruccion
   // es válida en cada una de las órdenes de construcción existentes en la Ciudadela. Estos valores booleanos se

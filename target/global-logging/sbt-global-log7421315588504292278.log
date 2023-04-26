@@ -1,0 +1,143 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\duvan.botero\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\duvan.botero\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.2 (Amazon.com Inc. Java 11.0.19)
+[debug]       Load.loadUnit: plugins took 94.3461ms
+[debug]       Load.loadUnit: defsScala took 0.2682ms
+[debug] [Loading] Scanning directory C:\Users\duvan.botero\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\duvan.botero\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 16.7205 ms
+[debug]           Load.resolveProject(global-plugins) took 41.3528ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\duvan.botero\.sbt\1.0\plugins, plugins: List(<none>))) took 83.5051ms
+[debug] [Loading] Done in C:\Users\duvan.botero\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 104.772ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1595ms
+[debug]     Load.loadUnit(file:/C:/Users/duvan.botero/.sbt/1.0/plugins/, ...) took 207.8444ms
+[debug]   Load.apply: load took 403.2071ms
+[debug]   Load.apply: resolveProjects took 5.9769ms
+[debug]   Load.apply: finalTransforms took 71.1912ms
+[debug]   Load.apply: config.delegates took 15.4989ms
+[debug]   Load.apply: Def.make(settings)... took 474.4954ms
+[debug]   Load.apply: structureIndex took 98.882ms
+[debug]   Load.apply: mkStreams took 19.4215ms
+[info] loading global plugins from C:\Users\duvan.botero\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 6239.6321ms
+[debug]           Load.loadUnit: plugins took 51.4579ms
+[debug]           Load.loadUnit: defsScala took 0.0088ms
+[debug] [Loading] Scanning directory C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S\project
+[debug]             Load.loadUnit: mkEval took 11.6343ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.0355 ms
+[info] loading settings for project constructores-s-a-s-build from idea.sbt ...
+[debug]               Load.resolveProject(constructores-s-a-s-build) took 3.5788ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id constructores-s-a-s-build, base: C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S\project, plugins: List(<none>))) took 6.2671ms
+[debug] [Loading] Done in C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S\project, returning: (constructores-s-a-s-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 2588.8429ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.2109ms
+[debug]         Load.loadUnit(file:/C:/Users/duvan.botero/Documents/Scala/Constructores%20S.A.S/project/, ...) took 2645.7152ms
+[debug]       Load.apply: load took 2647.3783ms
+[debug]       Load.apply: resolveProjects took 0.1382ms
+[debug]       Load.apply: finalTransforms took 9.9349ms
+[debug]       Load.apply: config.delegates took 0.4008ms
+[debug]       Load.apply: Def.make(settings)... took 79.8338ms
+[debug]       Load.apply: structureIndex took 49.4826ms
+[debug]       Load.apply: mkStreams took 0.004ms
+[info] loading project definition from C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 5087.8822ms
+[debug]     Load.loadUnit: defsScala took 0.0026ms
+[debug] [Loading] Scanning directory C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S
+[debug]       Load.loadUnit: mkEval took 0.2564ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.8335 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 38.5507ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S, plugins: List(<none>))) took 42.2779ms
+[debug] [Loading] Done in C:\Users\duvan.botero\Documents\Scala\Constructores S.A.S, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1292.0096ms
+[debug]     Load.loadUnit: cleanEvalClasses took 5.9434ms
+[debug]   Load.loadUnit(file:/C:/Users/duvan.botero/Documents/Scala/Constructores%20S.A.S/, ...) took 6386.5612ms
+[debug] Load.apply: load took 6397.0672ms
+[debug] Load.apply: resolveProjects took 0.1527ms
+[debug] Load.apply: finalTransforms took 47.8356ms
+[debug] Load.apply: config.delegates took 0.2407ms
+[debug] Load.apply: Def.make(settings)... took 68.836ms
+[debug] Load.apply: structureIndex took 22.3118ms
+[debug] Load.apply: mkStreams took 0.0031ms
+[info] set current project to Constructores S.A.S (in build file:/C:/Users/duvan.botero/Documents/Scala/Constructores%20S.A.S/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 51270 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 51270, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to Constructores S.A.S (in build file:/C:/Users/duvan.botero/Documents/Scala/Constructores%20S.A.S/)
+[debug] > Exec(idea-shell, None, None)

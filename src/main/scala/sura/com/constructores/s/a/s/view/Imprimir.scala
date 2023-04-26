@@ -7,7 +7,7 @@ trait Imprimir {
 
   //El método "imprimirMateriales" se utiliza para imprimir una lista de materiales en la consola.
   def imprimirMateriales(ordenConstruccion: OrdenConstruccion, ciudadela: Ciudadela): Any = {
-    println("\n ___ Materiales ___")
+    println("\n << Materiales >>")
     println(s"\n Madera: ${ciudadela.material.madera}  \n Adobe = ${ciudadela.material.adobe}  \n Arena = ${ciudadela.material.arena}\n Grava = ${ciudadela.material.grava} \n Cemento = ${ciudadela.material.cemento} \n")
     MenuPrincipal.menuPrincipal(ordenConstruccion, ciudadela)
   }
@@ -70,7 +70,7 @@ trait Imprimir {
   //El método "imprimirBienvenida" se utiliza para imprimir un mensaje de bienvenida al programa de construcción de la ciudadela,
   // junto con información sobre el arquitecto encargado del proyecto.
   def imprimirBienvenida(ciudadela: Ciudadela): Unit = {
-    println("__ Bienvenido a la Ciudadela del futuro __")
+    println("\n ___ Bienvenido al programa de construcción de la Ciudadela ___ \n")
     println(s"\n El arquitecto encargado del proyecto es: ${ciudadela.arquitecto.nombre} \n Su número de indentificación es: ${ciudadela.arquitecto.identificacion} \n")
   }
 
